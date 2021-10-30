@@ -1,4 +1,4 @@
-# Model WWW
+# Poker Planning Client
 ![](https://img.shields.io/github/package-json/v/LvFarias/poker-client/main?style=flat-square)
 ![](https://img.shields.io/github/license/LvFarias/poker-client?style=flat-square)
 ![](https://img.shields.io/github/repo-size/LvFarias/poker-client?style=flat-square)
