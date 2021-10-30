@@ -1,0 +1,30 @@
+<div class="header">
+  <div class="room">
+    <img class="logo" [src]="logo">
+    <input type="text" class="name" [class.disable]="me.type != 'admin'" [(ngModel)]="myRoom.name" (blur)="changeRoomName()">
+  </div>
+  <div class="user">
+    <label>Meu nome:</label>
+    <input type="text" class="name" [(ngModel)]="me.name" (blur)="changeUserName()">
+    <label>Tipo:</label>
+    <select class="type" [(ngModel)]="me.type">
+      <option *ngFor="let type of usertTypes" [value]="type.alias">{{type.name}}</option>
+    </select>
+  </div>
+</div>
+<div class="room">
+  <div class="table">
+    <button *ngIf="me.type == 'admin'" (click)="toogleVotes()">{{myRoom.showVotes ? 'Limpar Votos' : 'Mostrar Votos'}}</button>
+    <div class="average" [class.show]="myRoom.showVotes">Media<br>{{myRoom.average}}</div>
+    <div class="user" class="{{'position-' + (index + 1)}}" *ngFor="let user of myRoom.users; let index = index;">
+      <div class="card" [class.show]="myRoom.showVotes">{{user.vote}}</div>
+      <div class="name">{{user.name}}</div>
+    </div>
+  </div>
+</div>
+<div class="cards" *ngIf="me.type != 'viewer'">
+  <select *ngIf="me.type == 'admin'" class="type" [(ngModel)]="myRoom.cardTypeId" (change)="toogleCardType()">
+    <option *ngFor="let cardType of cardTypes" [ngValue]="cardType.id">{{cardType.name}}</option>
+  </select>
+  <div class="card" [class.active]="card == me.vote" (click)="changeVote(card)" *ngFor="let card of cards">{{card}}</div>
+</div>

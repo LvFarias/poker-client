@@ -1,0 +1,17 @@
+<div class="content">
+  <div class="box">
+    <input type="text" placeholder="Digite seu Nome" [(ngModel)]="name">
+    <div class="options">
+      <div class="create">
+        <label>Crie uma nova Sala:</label>
+        <input type="text" placeholder="Nome da Sala" [(ngModel)]="roomName">
+        <button (click)="createRoom()">Criar</button>
+      </div>
+      <div class="singin">
+        <label>Entrar em uma sala:</label>
+        <input type="text" placeholder="Código da Sala" [(ngModel)]="roomId">
+        <button (click)="singIn()">Entrar</button>
+      </div>
+    </div>
+  </div>
+</div>
