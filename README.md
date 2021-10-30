@@ -1,27 +1,68 @@
-# Client
+# Model WWW
+![](https://img.shields.io/github/package-json/v/LvFarias/poker-client/main?style=flat-square)
+![](https://img.shields.io/github/license/LvFarias/poker-client?style=flat-square)
+![](https://img.shields.io/github/repo-size/LvFarias/poker-client?style=flat-square)
+![](https://img.shields.io/github/issues/LvFarias/poker-client?style=flat-square)
+![](https://img.shields.io/github/issues-closed-raw/LvFarias/poker-client?style=flat-square)
+![](https://img.shields.io/github/issues-pr/LvFarias/poker-client?style=flat-square)
+![](https://img.shields.io/github/contributors/LvFarias/poker-client?style=flat-square)
+![](https://img.shields.io/github/commit-activity/m/LvFarias/poker-client?style=flat-square)
+![](https://img.shields.io/github/last-commit/LvFarias/poker-client/main?style=flat-square)
+![](https://img.shields.io/github/forks/LvFarias/poker-client?style=social)
+![](https://img.shields.io/github/stars/LvFarias/poker-client?style=social)
+![](https://img.shields.io/github/watchers/LvFarias/poker-client?style=social)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
+## Sumary
 
-## Development server
+- [Description](#description)
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+- [Run](#run)
+  - [In Local with Local-API](#in-local-with-local-api)
+  - [In Local with no Local-API](#in-local-with-no-local-api)
+  - [In Local with Sever Side Render (SSR)](#in-local-with-sever-side-render-(ssr))
+  - [In Production](#in-production)
+- [Build](#build)
+  - [For Production](#for-production)
+  - [For Prerender](#for-prerender)
+- [Authors](#authors)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Description
 
-## Code scaffolding
+A free and open-source project to make votes task points with poker style.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Prerequisites
+
+- npm `npm i -g npm`
+- Angular CLI `npm i -g @angular/cli`
+
+## Getting Started
+
+```
+npm i
+```
+This command will install everything needed for the project, based on package.json
+
+## Run
+### In Local with Local
+
+```
+npm run local
+```
+
+### In Production
+
+```
+npm run serve
+```
 
 ## Build
+### For Production
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```
+npm run build
+```
 
-## Running unit tests
+## Authors
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- [Luan Vasco de Farias](https://github.com/LvFarias)

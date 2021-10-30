@@ -1,11 +1,33 @@
 {
-  "name": "client",
-  "version": "0.0.0",
+  "name": "poker-client",
+  "version": "0.1.0",
+  "description": "A free and open-source project to make votes task points with poker style.",
+  "main": "index.js",
   "scripts": {
     "local": "ng serve",
-    "build:prod": "ng build --prod"
+    "serve": "node server.js",
+    "build": "ng build --prod"
   },
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LvFarias/poker-client.git"
+  },
+  "author": "Luan Vasco de Farias <luan.vfarias@gmail.com> (https://github.com/LvFarias/)",
+  "contributors": [
+    "Luan Vasco de Farias <luan.vfarias@gmail.com> (https://github.com/LvFarias/)"
+  ],
+  "bugs": {
+    "url": "https://github.com/LvFarias/poker-client/issues"
+  },
+  "homepage": "https://github.com/LvFarias/poker-client#readme",
+  "keywords": [
+    "free",
+    "open",
+    "poker",
+    "source",
+    "planning",
+    "open-source"
+  ],
   "dependencies": {
     "@angular/animations": "~11.2.13",
     "@angular/common": "~11.2.13",
