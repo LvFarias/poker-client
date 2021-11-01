@@ -17,7 +17,7 @@
     <button *ngIf="me.type == 'admin'" (click)="toogleVotes()">{{myRoom.showVotes ? 'Limpar Votos' : 'Mostrar Votos'}}</button>
     <div class="average" [class.show]="myRoom.showVotes">Media<br>{{myRoom.average}}</div>
     <div class="user" class="{{'position-' + (index + 1)}}" *ngFor="let user of myRoom.users; let index = index;">
-      <div class="card" [class.show]="myRoom.showVotes">{{user.vote}}</div>
+      <div class="card" [class.show]="myRoom.showVotes" [class.hasVote]="user.vote != null">{{user.vote}}</div>
       <div class="name">{{user.name}}</div>
     </div>
   </div>

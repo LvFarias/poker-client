@@ -112,6 +112,9 @@
                     &.show {
                         color: #0e0114;
                     }
+                    &.hasVote{
+                        background-image: url("assets/hasVote.jpg");
+                    }
                 }
                 &.position-1 {
                     right: calc(100% + 1rem);
